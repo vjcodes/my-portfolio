@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Roboto&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -70,3 +73,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+html,
+body,
+#root,
+.app{
+  height: 100%;
+  width: 100%;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Catamaran', sans-serif;
+  /* @apply text-gray-500 */
+}
