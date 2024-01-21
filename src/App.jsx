@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -16,10 +17,12 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   });
   return (
-    <div className="app h-[100vh] w-[100vw]">
-      <Navbar isTopOfPage={isTopOfPage} />
-      <Home />
-    </div>
+    <ParallaxProvider>
+      <div className="app h-[100vh] w-[100vw]">
+        <Navbar isTopOfPage={isTopOfPage} />
+        <Home />
+      </div>
+    </ParallaxProvider>
   );
 }
 

@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { GITHUB_URL, LINKEDIN_URL } from "../utils/constants";
 import { handleNavigateToNewTab } from "../utils/utilFunctions";
 import useMediaQuery from "../hooks/useMediaQuery";
+// import { useParallax } from "react-scroll-parallax";
 
 const socialAccountsClassName =
   "h-8 w-8 cursor-pointer transition duration-500 hover:opacity-50";
@@ -57,11 +58,13 @@ const MyImageSection = () => {
 
 const Banner = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px");
+//   const { ref } = useParallax({ speed:10 });
   return (
     <div
+    //   ref={ref}
       className={`${
         isAboveMediumScreens ? "flex" : ""
-      } h-[70%] w-full border  box-border bg-[#F3F3F3]`}
+      } h-[100%] w-full border  box-border bg-[#F3F3F3]`}
     >
       {isAboveMediumScreens && (
         <>
