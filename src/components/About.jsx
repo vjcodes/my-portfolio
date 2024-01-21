@@ -9,20 +9,20 @@ const About = () => {
     <div
         // ref={ref}
       id="about"
-      className="w-full p-2 py-10 box-border"
+      className="w-full p-2 py-12 box-border"
     >
-      <div className="m-auto w-full text-center py-4 text-5xl font-[1000] tracking-wider">
+      <div className="m-auto w-full text-center py-4 text-5xl font-[1000] tracking-wider mb-6">
         About <span className="text-[#ee8738]">Me</span>
       </div>
 
       <div className="flex">
         {/* TITLE_SECTION */}
-        <div className="w-1/4 flex items-center">
-          <img src={aboutSvg} alt="about me" className="h-[10rem]" />
+        <div className="w-4/12 flex items-center">
+          <img src={aboutSvg} alt="about me"/>
         </div>
 
         {/* ABOUT DESCRIPTION */}
-        <div className="w-3/4 p-2">
+        <div className="w-8/12 px-10">
           <div className="flex flex-wrap gap-4">
             {/* YEARS_OF_EXPERIENCE */}
             <AboutBox number={2} text="Years of Experience" />
