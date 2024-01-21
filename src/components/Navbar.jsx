@@ -10,9 +10,15 @@ const Navbar = (props) => {
   const navbarBackground = props?.isTopOfPage
     ? "bg-transparent"
     : "bg-orange-100 drop-shadow opacity-90";
+
+  const scrollToDiv = (target) => {
+    let targetDiv = document.getElementById(target);
+    targetDiv.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div
-      className={`w-full h-[7%] ${navbarBackground}  fixed top-0 z-30 ${flexBetween} p-2`}
+      className={`w-full h-[7%] ${navbarBackground} fixed top-0 z-30 ${flexBetween} p-2`}
     >
       <div className="cursor-pointer pl-10">
         <h1 className="tracking-widest font-extrabold  text-[#F0A53E] text-4xl">
@@ -26,6 +32,7 @@ const Navbar = (props) => {
             <div
               key={nav.id}
               className="cursor-pointer transition duration-500 hover:text-2xl hover:text-[#800020]"
+              onClick={() => scrollToDiv(nav.navId)}
             >
               {nav.title}
             </div>
