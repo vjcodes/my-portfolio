@@ -1,3 +1,5 @@
+import LOGOS from "../assets/tech";
+
 export const GITHUB_URL = "https://github.com/vjcodes";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/in/vinayak-jaiswal-7b92ab189/";
@@ -62,5 +64,58 @@ export const experiences = [
     companyName: "Bethany Convent School, Prayagraj",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem explaceat facilis cum consectetur alias ipsam quis nobis aut rem.",
+  },
+];
+
+export const techs = [
+  {
+    id: 1,
+    title: "Javascript",
+    logo: LOGOS.jsLogo,
+  },
+  {
+    id: 2,
+    title: "React.js",
+    logo: LOGOS.reactLogo,
+  },
+  {
+    id: 3,
+    title: "Redux Toolkit",
+    logo: LOGOS.reduxLogo,
+  },
+  {
+    id: 4,
+    title: "Typescript",
+    logo: LOGOS.typescriptLogo,
+  },
+  {
+    id: 5,
+    title: "Tailwind CSS",
+    logo: LOGOS.tailwindLogo,
+  },
+  {
+    id: 6,
+    title: "HTML 5",
+    logo: LOGOS.htmlLogo,
+  },
+  {
+    id: 7,
+    title: "Sass",
+    logo: LOGOS.sassLogo,
+  },
+  {
+    id: 8,
+    title: "Node.js",
+    logo: LOGOS.nodejsLogo,
+  },
+  {
+    id: 9,
+    title: "Express.js",
+    logo: LOGOS.expressLogo,
+  },
+  {
+    id: 10,
+    title: "MongoDB",
+    logo: LOGOS.mongodbLogo,
   },
 ];
