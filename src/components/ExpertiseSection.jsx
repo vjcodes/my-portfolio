@@ -9,7 +9,7 @@ const ExpertiseSection = () => {
         Technical Expertise
       </h1>
 
-      <div className="sm:flex flex flex-col-reverse p-10">
+      <div className="sm:flex-row flex flex-col-reverse items-center justify-center p-10">
         <div className="sm:w-8/12 w-full flex gap-12 flex-wrap">
           {techs.map((tech) => (
             <TechIcon key={tech?.id} icon={tech.logo} techName={tech.title} />
