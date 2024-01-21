@@ -39,7 +39,12 @@ const Navbar = (props) => {
           ))}
         </div>
       ) : (
-        <HiOutlineMenuAlt3 className="h-10 w-10" />
+        !props.isMenuToggled && (
+          <HiOutlineMenuAlt3
+            className="h-10 w-10"
+            onClick={() => props?.setIsMenuToggled(true)}
+          />
+        )
       )}
     </div>
   );
