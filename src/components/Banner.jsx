@@ -58,10 +58,11 @@ const MyImageSection = () => {
 
 const Banner = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px");
-//   const { ref } = useParallax({ speed:10 });
+  //   const { ref } = useParallax({ speed:10 });
   return (
     <div
-    //   ref={ref}
+      //   ref={ref}
+      id="home"
       className={`${
         isAboveMediumScreens ? "flex" : ""
       } h-[100%] w-full border  box-border bg-[#F3F3F3]`}
