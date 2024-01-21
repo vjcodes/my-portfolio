@@ -9,7 +9,7 @@ const About = () => {
     <div
         // ref={ref}
       id="about"
-      className="w-full p-2 border box-border"
+      className="w-full p-2 py-10 box-border"
     >
       <div className="m-auto w-full text-center py-4 text-5xl font-[1000] tracking-wider">
         About <span className="text-[#ee8738]">Me</span>
