@@ -3,6 +3,8 @@ import LOGOS from "../assets/tech";
 export const GITHUB_URL = "https://github.com/vjcodes";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/in/vinayak-jaiswal-7b92ab189/";
+export const TWITTER_URL = "https://twitter.com/CodeMaestroVJ";
+export const INSTAGRAM_URL = "https://www.instagram.com/codingsaiyannn/"
 
 export const navMenus = [
   { id: 1, title: "Home", navId: "home" },
@@ -119,3 +121,13 @@ export const techs = [
     logo: LOGOS.mongodbLogo,
   },
 ];
+
+export const CONTACT_SECTION_CONSTANTS = {
+  SALUTATION_HEADING: "DON'T BE SHY !",
+  SALUTATION_TEXT_ONE:
+    "Feel free to reach out if you're interested in collaboration, havejob opportunities, or just want to connect.",
+  SALUTATION_TEXT_TWO:
+    "I'm always open to new challenges and exciting projects. Let's build something great together!",
+  MY_EMAIL: "vinayak.kris@gmail.com",
+  MY_CONTACT_NUMBER: "9653084468",
+};
