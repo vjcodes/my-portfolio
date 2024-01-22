@@ -1,13 +1,19 @@
 import aboutSvg from "./../assets/aboutMe.svg";
 import AboutBox from "./AboutBox";
-import DownloadCv from "./DownloadCv";
+import { DownloadCvButton } from "./CustomButton";
+import { ImDownload } from "react-icons/im";
+import { CV_DRIVE_URL } from "../utils/constants";
 // import { useParallax } from "react-scroll-parallax";
 
+const handlePreview = () => {
+  window.open(CV_DRIVE_URL, "_blank");
+};
+
 const About = () => {
-    // const { ref } = useParallax({ speed: 10 });
+  // const { ref } = useParallax({ speed: 10 });
   return (
     <div
-        // ref={ref}
+      // ref={ref}
       id="about"
       className="w-full p-2 py-12 box-border"
     >
@@ -18,7 +24,7 @@ const About = () => {
       <div className="flex">
         {/* TITLE_SECTION */}
         <div className="w-4/12 flex items-center">
-          <img src={aboutSvg} alt="about me"/>
+          <img src={aboutSvg} alt="about me" />
         </div>
 
         {/* ABOUT DESCRIPTION */}
@@ -32,7 +38,11 @@ const About = () => {
 
           {/* DOWNLOAD CV */}
           <div>
-            <DownloadCv />
+            <DownloadCvButton
+              icon={<ImDownload color="white" />}
+              text="DOWNLOAD CV"
+              handleClick={handlePreview}
+            />
           </div>
         </div>
       </div>
