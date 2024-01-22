@@ -48,13 +48,13 @@ export const MessageForm = () => {
       <div className="w-full flex justify-between mb-4">
         <input
           type="text"
-          className="w-[48%] border rounded-lg h-10 p-2 bg-gray-100 shadow-md"
+          className="w-[48%] rounded-lg h-10 p-2 bg-gray-100 shadow-md"
           placeholder="YOUR NAME"
           name="from_name"
         />
         <input
           type="email"
-          className="w-[48%] border rounded-lg h-10 p-2 bg-gray-100 shadow-md"
+          className="w-[48%] rounded-lg h-10 p-2 bg-gray-100 shadow-md"
           placeholder="YOUR EMAIL"
           name="from_email"
         />
@@ -62,13 +62,14 @@ export const MessageForm = () => {
 
       <textarea
         name="subject"
-        className="w-full border rounded-lg h-10 p-2 mb-4 bg-gray-100 shadow-md"
+        className="w-full resize-none rounded-lg h-10 p-2 mb-4 bg-gray-100 shadow-md"
         placeholder="YOUR SUBJECT"
       />
       <textarea
         name="message"
-        className="w-full border rounded-lg h-40 p-2 bg-gray-100 shadow-md"
+        className="w-full resize-none rounded-tr-2xl rounded-tl-2xl rounded-bl-2xl h-40 p-2 bg-gray-100 shadow-md"
         placeholder="YOUR MESSAGE"
+        
       />
 
       <CustomButton
